@@ -10,7 +10,7 @@ function removeActive() {
   });
 }
 
-var waypoint1 = new Waypoint({
+var aboutSec = new Waypoint({
   element: document.getElementById("about"),
   handler: function (direction) {
     removeActive();
@@ -28,7 +28,7 @@ var waypoint1 = new Waypoint({
   offset: "55%",
 });
 
-var waypoint2 = new Waypoint({
+var portfolioSec = new Waypoint({
   element: document.getElementById("portfolio"),
   handler: function (direction) {
     removeActive();
@@ -46,7 +46,7 @@ var waypoint2 = new Waypoint({
   offset: "55%",
 });
 
-var waypoint3 = new Waypoint({
+var contactSec = new Waypoint({
   element: document.getElementById("contact"),
   handler: function (direction) {
     removeActive();
@@ -62,42 +62,4 @@ var waypoint3 = new Waypoint({
     } else document.querySelector(".portfolio-link").classList.add("active");
   },
   offset: "55%",
-});
-
-/**********ANIMATIONS *************/
-
-var waypoint4 = new Waypoint({
-  element: document.querySelector(".bullet"),
-  handler: function () {
-    document
-      .querySelectorAll(".bullet")
-      .forEach((el) =>
-        el.classList.add("animate__animated", "animate__flipInX")
-      );
-  },
-  offset: "70%",
-});
-
-document
-  .querySelectorAll(".del")
-  .forEach((el) => el.style.setProperty("--animate-duration", "1.5s"));
-
-var waypoint5 = new Waypoint({
-  element: document.querySelector(".js-back-img"),
-  handler: function () {
-    document
-      .querySelector(".js-back-img")
-      .classList.add("animate__animated", "animate__fadeInDown");
-  },
-  offset: "60%",
-});
-
-var waypoint6 = new Waypoint({
-  element: document.querySelector(".js-back-txt"),
-  handler: function () {
-    document
-      .querySelector(".js-back-txt")
-      .classList.add("animate__animated", "animate__fadeInUp");
-  },
-  offset: "60%",
 });
