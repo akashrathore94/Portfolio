@@ -27,7 +27,13 @@ html {
 
 body {
   font-family: mont;
-  overflow-x: hidden;
+}
+
+
+section {
+  min-height: 100vh;
+  padding: 100px 0;
+  overflow: hidden;
 }
 
 .large-header {
