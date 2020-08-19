@@ -63,3 +63,130 @@ var contactSec = new Waypoint({
   },
   offset: "55%",
 });
+
+
+/**********ANIMATIONS *************/
+
+document
+  .querySelectorAll(".del")
+  .forEach((el) => el.style.setProperty("--animate-duration", "1.5s"));
+
+var bul1 = new Waypoint({
+  element: document.querySelector(".js-bul1"),
+  handler: function () {
+    document
+      .querySelector(".js-bul1")
+      .classList.add("animate__animated", "animate__flipInX");
+  },
+  offset: "75%",
+});
+
+var bul2 = new Waypoint({
+  element: document.querySelector(".js-bul2"),
+  handler: function () {
+    document
+      .querySelector(".js-bul2")
+      .classList.add("animate__animated", "animate__flipInX");
+  },
+  offset: "75%",
+});
+
+var bul3 = new Waypoint({
+  element: document.querySelector(".js-bul3"),
+  handler: function () {
+    document
+      .querySelector(".js-bul3")
+      .classList.add("animate__animated", "animate__flipInX");
+  },
+  offset: "75%",
+});
+
+var bul4 = new Waypoint({
+  element: document.querySelector(".js-bul4"),
+  handler: function () {
+    document
+      .querySelector(".js-bul4")
+      .classList.add("animate__animated", "animate__flipInX");
+  },
+  offset: "75%",
+});
+
+var about = new Waypoint({
+  element: document.querySelector(".js-about"),
+  handler: function () {
+    document
+      .querySelector(".js-about")
+      .classList.add("animate__animated", "animate__fadeIn");
+  },
+  offset: "70%",
+});
+
+var skills = new Waypoint({
+  element: document.querySelector(".js-skills"),
+  handler: function () {
+    document
+      .querySelector(".js-skills")
+      .classList.add("animate__animated", "animate__fadeIn");
+  },
+  offset: "70%",
+});
+
+var backstageImg = new Waypoint({
+  element: document.querySelector(".js-back-img"),
+  handler: function () {
+    document
+      .querySelector(".js-back-img")
+      .classList.add("animate__animated", "animate__fadeInLeft");
+  },
+  offset: "70%",
+});
+
+var backstageTxt = new Waypoint({
+  element: document.querySelector(".js-back-txt"),
+  handler: function () {
+    document
+      .querySelector(".js-back-txt")
+      .classList.add("animate__animated", "animate__fadeInRight");
+  },
+  offset: "70%",
+});
+
+var budgetyImg = new Waypoint({
+  element: document.querySelector(".js-budg-img"),
+  handler: function () {
+    document
+      .querySelector(".js-budg-img")
+      .classList.add("animate__animated", "animate__fadeInLeft");
+  },
+  offset: "70%",
+});
+
+var budgetyTxt = new Waypoint({
+  element: document.querySelector(".js-budg-txt"),
+  handler: function () {
+    document
+      .querySelector(".js-budg-txt")
+      .classList.add("animate__animated", "animate__fadeInRight");
+  },
+  offset: "70%",
+});
+
+var thirdImg = new Waypoint({
+  element: document.querySelector(".js-third-img"),
+  handler: function () {
+    document
+      .querySelector(".js-third-img")
+      .classList.add("animate__animated", "animate__fadeInLeft");
+  },
+  offset: "70%",
+});
+
+var thirdTxt = new Waypoint({
+  element: document.querySelector(".js-third-txt"),
+  handler: function () {
+    document
+      .querySelector(".js-third-txt")
+      .classList.add("animate__animated", "animate__fadeInRight");
+  },
+  offset: "70%",
+});
