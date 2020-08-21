@@ -209,3 +209,19 @@ var contactForm = new Waypoint({
   },
   offset: "70%",
 });
+
+/****BURGER*******/
+const nav = document.querySelector(".nav-list");
+const burger = document.querySelector(".burger");
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("nav-open");
+  burger.classList.toggle("toggle");
+});
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.toggle("nav-open");
+    burger.classList.toggle("toggle");
+  });
+});
