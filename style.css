@@ -159,6 +159,9 @@ header h1 a {
 
 .about {
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sub-section {
@@ -379,6 +382,7 @@ section h2 {
 .portfolio-1 {
   padding-top: 0;
 }
+
 .portfolio-last {
   padding-bottom: 0;
 }
