@@ -48,25 +48,31 @@
       </div>
     </section>
 
-    <div class="navi">
-      <nav>
+    <header>
+      <div class="navi">
         <h1><a href="#home">Akash</a></h1>
-        <ul>
-          <li><a class="active link home-link" href="#home">Home</a></li>
-          <li>
-            <a class="link about-link" href="#about">About</a>
-          </li>
-          <li>
-            <a class="link portfolio-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a class="link contact-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-      
-    
+        <nav class="nav-list">
+          <ul>
+            <li><a class="active link home-link" href="#home">Home</a></li>
+            <li>
+              <a class="link about-link" href="#about">About</a>
+            </li>
+            <li>
+              <a class="link portfolio-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a class="link contact-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </div>
+      </div>
+    </header>
+
     <section class="about" id="about">
       <div class="sub-section">
         <div class="heading h-about">
@@ -290,18 +296,21 @@
       <div class="portfolio-sub-section portfolio-last">
         <div class="project">
           <div class="project-sec-1 js-third-img">
-            <img src="images/laptop-budegty.png" alt="backstage" />
+            <img
+              src="images/laptop-tablet-phone-backstage.png"
+              alt="backstage"
+            />
           </div>
           <div class="project-sec-2 js-third-txt">
             <div class="label-heading">
-              Budgety
+              Backstage
             </div>
             <div class="label-text">
-              Budgety is a small web-app use to keep records of your monthly
-              budget. It is built using HTML5, CSS3 and vanilla javascript.
+              A responsive platform to check all the healthy offerings provided
+              by a local restaurant chain in Delhi.
             </div>
             <div class="project-btn">
-              <a href="./budgety/budgety.html" target="_blank">Preview</a>
+              <a href="./backstage/backstage.html" target="_blank">Preview</a>
             </div>
           </div>
         </div>
@@ -312,9 +321,54 @@
       <div class="sub-section">
         <div class="heading h-contact"><h2>Contact</h2></div>
         <div class="header-bar bar-contact"></div>
+        <div class="highlight label-text">
+          Have a question or want to work together?
+        </div>
+        <form class="contact-form" netlify>
+          <input placeholder="Name" type="text" name="name" required="" />
+          <input
+            placeholder="Enter email"
+            type="email"
+            name="email"
+            required=""
+          />
+          <textarea
+            placeholder="Your Message"
+            type="text"
+            name="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button type="submit" class="sub-button">Submit</button>
+        </form>
       </div>
     </section>
 
+    <footer>
+      <div class="top">
+        <a href="#"><i class="fa fa-angle-double-up"></i></a>
+      </div>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/akashrathore/" target="blank"
+          ><div class="icon">
+            <i class="fa fa-linkedin" aria-hidden="true"></i></div
+        ></a>
+        <a href="https://www.facebook.com/akash.rathore.1994" target="blank"
+          ><div class="icon"><i class="fa fa-facebook-f"></i></div
+        ></a>
+        <a href="https://github.com/akashrathore94" target="blank"
+          ><div class="icon"><i class="fa fa-github-square"></i></div
+        ></a>
+        <a href="https://www.instagram.com/akash_rathore/" target="blank"
+          ><div class="icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i></div
+        ></a>
+      </div>
+      <div class="info">
+        AKASH RATHORE
+        <span class="footnote">© 2020</span>
+      </div>
+    </footer>
 
     <script src="js/TweenLite.min.js"></script>
     <script src="js/EasePack.min.js"></script>
