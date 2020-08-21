@@ -64,7 +64,6 @@ var contactSec = new Waypoint({
   offset: "55%",
 });
 
-
 /**********ANIMATIONS *************/
 
 document
@@ -187,6 +186,26 @@ var thirdTxt = new Waypoint({
     document
       .querySelector(".js-third-txt")
       .classList.add("animate__animated", "animate__fadeInRight");
+  },
+  offset: "70%",
+});
+
+var highlight = new Waypoint({
+  element: document.querySelector(".highlight"),
+  handler: function () {
+    document
+      .querySelector(".highlight")
+      .classList.add("animate__animated", "animate__fadeInRight");
+  },
+  offset: "70%",
+});
+
+var contactForm = new Waypoint({
+  element: document.querySelector(".contact-form"),
+  handler: function () {
+    document
+      .querySelector(".contact-form")
+      .classList.add("animate__animated", "animate__zoomIn");
   },
   offset: "70%",
 });
